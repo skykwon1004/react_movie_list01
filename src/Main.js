@@ -32,7 +32,7 @@ const Main = () => {
     //필요한 movie list만들기위해 그릇에 담을 준비...
     const [movie, setMovie] = useState([]);
 
-    const limit = 40;
+    const limit = 50;
 
     //영화 데이터를 일단 부르자 부르는데 시간걸리니깐 비동기처리 async await 사용
     //axios 깔아주자 터미널에 npm i axios -> import 해주는거 잊지말자
@@ -46,7 +46,7 @@ const Main = () => {
     }
 
     //console에 찍어보니 movie list 잘들어갔음
-    //console.log(movie)
+    console.log("무비정보", movie)
 
     //movieData 가져올때 한번만 실행하게
     useEffect(() => {
